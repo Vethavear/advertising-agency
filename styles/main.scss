@@ -9,6 +9,9 @@ $box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   padding: 0;
   text-decoration: none;
   font-family: "Roboto", sans-serif;
+  &:focus{
+    outline-width: 0;
+  }
 }
 
 h2,
@@ -693,5 +696,128 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    .contact{
+      display: flex;
+      align-items: flex-start;
+      margin-top: 2rem;
+      .left{
+        color: #6e6e6e;
+        flex:1;
+        display: flex;
+        flex-direction: column;
+        .row{
+          display:flex;
+          margin: 1rem 0;
+         
+          i{
+            color: #9657fd;
+            margin-right: 1rem;
+          }
+        }
+      }
+      .right{
+        flex:2;
+        display:flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        width:100%;
+        margin-left: 2rem;
+        form{
+          .row{
+            display:flex;
+            position: relative;
+            width:100%;
+            .input{
+              position: relative;
+              display:flex;
+              width:100%;
+            }
+            input,textarea{
+              width: 100%;
+              padding-bottom: 15px;
+              padding-left: 5px;
+              padding-top: 5px;
+              border: none;
+              border-bottom: 2px solid #d1d1d1;
+              background: #f6f6f6;
+              margin: 1rem 0.5rem;
+              font-weight: 600;
+              font-size: 1rem;
+              transition: all 0.5s;
+              &:hover{
+                border-bottom: 2px solid #9657fd;
+              }
+            }
+          }
+          .btn-send{
+            width:100%;
+            cursor: pointer;
+            background: #9657fd;
+            display:flex;
+            justify-content: center;
+            padding:1.5rem;
+            transition: all 0.5s;
+            a{
+              color:white;
+
+            }
+            &:hover{
+              background: #B935FE;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+footer{
+  background: linear-gradient(to right, rgba(233, 76, 233, 1), rgba(96, 19, 232, 1));
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h1{
+    color:white;
+  }
+  .social{
+    margin: 2rem 0;
+    display: flex;
+    i{
+      width:50px;
+      height:50px;
+      margin: 0 1rem;
+      border: 2px solid #fff;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      color:white;
+      font-size: 1.5rem;
+    }
+  }
+  .links{
+    margin-top:2rem;
+    padding: 2rem 0;
+    width:100%;
+    border-top: 1px solid #d1d1d1;
+    .container{
+      display:flex;
+      justify-content: space-between;
+      align-items: center;
+      color:white;
+      ul{
+        list-style-type: none;
+        display:flex;
+        li{
+          margin: 0 1rem;
+          a{
+            color:white;
+          }
+        }
+      }
+    }
+    
   }
 }
