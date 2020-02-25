@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <nav>
+  <nav class="fade">
     <div class="logo">STATION</div>
     <ul>
       <li class="px-1"><a href="#showcase">HOME</a></li>
@@ -25,8 +25,8 @@
     </ul>
   </nav>
 
-  <section id="showcase">
-    <div id="showcase-content">
+  <section id="showcase" class="fade">
+    <div id="showcase-content" class="fade">
       <header>
         <div class="title underlined">
           <h1 class="my-1 btext center">STATION</h1>
@@ -38,9 +38,9 @@
       </header>
     </div>
   </section>
-
+  <div class="fade"></div>
   <section id="service" class="py-2 gbg">
-    <div class="container">
+    <div class="container fade">
       <h3 class="center ts1 my-2">OUR BEST <span>SERVICES</span></h3>
       <h1 class="btext center">What We Do For You</h1>
       <i class="fas fa-chevron-circle-down"></i>
@@ -90,10 +90,10 @@
       </div>
     </div>
   </section>
-
+<div class="fade"></div>
   <section id="ourmission" class="my-2">
-    <div class="container ">
-      <div class="left">
+    <div class="container">
+      <div class="left fade">
         <img src="./img/cofee.jpg" alt="">
       </div>
       <div class="right">
@@ -106,12 +106,12 @@
       </div>
     </div>
   </section>
-
-  <section id="skills" class="py-2 gbg">
+  <div class="fade"></div>
+  <section id="skills" class="py-2 gbg ">
     <h3 class="center ts1 my-2">BEST <span>SKILLS</span></h3>
     <h1 class="btext center">Expertise Areas</h1>
     <i class="fas fa-chevron-circle-down"></i>
-    <div class="bars my-2">
+    <div class="bars my-2 fade">
       <div class="bar">
         <p>USER EXPERIENCE</p>
         <span>30%</span>
@@ -163,29 +163,30 @@
       <h1 class="btext center">Recent Creative Work</h1>
       <i class="fas fa-chevron-circle-down"></i>
       <div id="menu" class="my-1">
-        <button href="">All</button>
-        <button href="">Web Design</button>
-        <button href="">UI Design</button>
-        <button href="">App Design</button>
+        <button id="all" href="">All</button>
+        <button id="web"href="">Web Design</button>
+        <button id="ui" href="">UI Design</button>
+        <button id="app" href="">App Design</button>
       </div>
       <div class="items">
-        <div class="item web"><a href="#">View Details</a><img src="./img/1.jpg" alt=""></div>
-        <div class="item ui"><a href="#">View Details</a><img src="./img/2.jpg" alt=""></div>
-        <div class="item app"><a href="#">View Details</a><img src="./img/3.jpg" alt=""></div>
-        <div class="item ui"><a href="#">View Details</a><img src="./img/4.jpg" alt=""></div>
-        <div class="item web"><a href="#">View Details</a><img src="./img/5.jpg" alt=""></div>
-        <div class="item app"><a href="#">View Details</a><img src="./img/6.jpg" alt=""></div>
+        <div class="item web visible"><a href="#">View Details</a><img src="./img/1.jpg" alt=""></div>
+        <div class="item ui visible"><a href="#">View Details</a><img src="./img/2.jpg" alt=""></div>
+        <div class="item app visible"><a href="#">View Details</a><img src="./img/3.jpg" alt=""></div>
+        <div class="item ui visible"><a href="#">View Details</a><img src="./img/4.jpg" alt=""></div>
+        <div class="item web visible"><a href="#">View Details</a><img src="./img/5.jpg" alt=""></div>
+        <div class="item app visible"><a href="#">View Details</a><img src="./img/6.jpg" alt=""></div>
       </div>
       <div class="btn-wrap my-2"> <a href="#Service">All portfolios</a></div>
     </div>
   </section>
+  <div class="fade"></div>
 
-  <section id="pricing" class="py-2 gbg">
+  <section id="pricing" class="py-2 gbg ">
     <div class="container">
       <h3 class="center ts1 my-2">OUR BEST <span>PRICES</span></h3>
       <h1 class="center">Services Price Plan</h1>
       <i class="fas fa-chevron-circle-down"></i>
-      <div class="cards p2">
+      <div class="cards p2 fade">
         <div class="card">
           <h1 class="my-1">Basic plan</h1>
           <div class="underline"></div>
@@ -267,24 +268,24 @@
       </div>
     </div>
   </section>
-
+<div id="countit"></div>
   <section id="mix">
     <div class="container">
       <div class="items">
         <div class="item">
-          <h1>300</h1>
+          <h1 class="counter">500</h1>
           <div class="underline"></div>
           <p>Projects Completed</p>
         </div>
         <div class="item">
-          <h1>300</h1>
+          <h1 class="counter">300</h1>
           <div class="underline"></div>
-          <p>Projects Completed</p>
+          <p>Projects Ongoing</p>
         </div>
         <div class="item">
-          <h1>300</h1>
+          <h1 class="counter">100</h1>
           <div class="underline"></div>
-          <p>Projects Completed</p>
+          <p>Happy Clients</p>
         </div>
       </div>
     </div>
@@ -292,7 +293,7 @@
 
   <section id="squad" class="py-2 gbg">
     <div class="container">
-      <h3 class="center ts1 my-2">MEET THE<span>CREATIVE</span></h3>
+      <h3 class="center ts1 my-2">MEET THE<span> CREATIVE</span></h3>
       <h1 class="btext center">Who Work With US</h1>
       <i class="fas fa-chevron-circle-down"></i>
       <div class="items">

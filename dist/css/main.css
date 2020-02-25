@@ -121,9 +121,9 @@ nav {
   width: 100%;
   height: 10vh;
   z-index: 2;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(233, 76, 233, 0.8)), to(rgba(96, 19, 232, 0.8)));
-  background: linear-gradient(to right, rgba(233, 76, 233, 0.8), rgba(96, 19, 232, 0.8));
   border-bottom: solid 1px #fff;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -440,6 +440,7 @@ nav ul li a {
 }
 
 #skills .bars .bar .progress {
+  overflow: hidden;
   width: 350px;
   height: 16px;
   border: 2px solid #5f13de;
@@ -450,6 +451,10 @@ nav ul li a {
   position: absolute;
   top: 0;
   left: 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: all 2s;
+  transition: all 2s;
   bottom: 0;
   background: #9657fd;
 }
@@ -468,6 +473,11 @@ nav ul li a {
 
 #skills .bars .bar .progress .p50 {
   right: 50%;
+}
+
+.fillBar {
+  -webkit-transform: translateX(0) !important;
+          transform: translateX(0) !important;
 }
 
 .items {
@@ -505,7 +515,7 @@ nav ul li a {
 #project .container #menu button {
   border: none;
   background: none;
-  margin: 0 1rem;
+  padding: 0 1rem;
   font-size: 1.1rem;
   color: #6e6e6e;
   font-weight: bold;
@@ -515,11 +525,22 @@ nav ul li a {
   color: #9657fd;
 }
 
+#project .container .visible {
+  display: block !important;
+}
+
+#project .container .opacity0 {
+  opacity: 0;
+}
+
 #project .container .item {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   position: relative;
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
           box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   height: 100%;
+  display: none;
 }
 
 #project .container .item::after {
@@ -962,6 +983,8 @@ nav ul li a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 #ratings .container .ratings-wrapper .ratings .item {
@@ -1079,6 +1102,7 @@ nav ul li a {
       -ms-flex-align: start;
           align-items: flex-start;
   height: 600px;
+  cursor: pointer;
 }
 
 #blogcards .container .cards .card .info {
@@ -1414,5 +1438,33 @@ footer .links .container ul li {
 
 footer .links .container ul li a {
   color: white;
+}
+
+.fade {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.fadeIn {
+  -webkit-animation: fadeIn 2s;
+          animation: fadeIn 2s;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=main.css.map */
