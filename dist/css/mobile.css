@@ -1,6 +1,148 @@
-@media (max-width: 500px) {
-  * {
-    overflow-x: hidden;
-  }
+* {
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+.btext {
+  font-size: 1.7rem;
+}
+
+.ts1 {
+  font-size: 1rem;
+}
+
+.burgerClicked {
+  height: 50vh !important;
+}
+
+.burgerClicked ul {
+  position: fixed;
+  width: 100%;
+  top: 10vh;
+  background: black;
+  height: 40vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style-type: none;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2rem 0;
+}
+
+.burgerClicked ul li a {
+  color: white;
+}
+
+nav {
+  border: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-top: 0.5rem;
+}
+
+nav #burger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav ul {
+  display: none;
+}
+
+#showcase {
+  height: 100%;
+}
+
+#showcase #showcase-content {
+  padding-top: 30vh;
+  height: 100vh;
+}
+
+#showcase #showcase-content header {
+  padding: 0 1rem;
+}
+
+#showcase #showcase-content header p {
+  width: 100%;
+}
+
+#service .container .cards {
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+#ourmission .container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#skills .bars {
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 0;
+}
+
+#skills .bars .bar {
+  overflow: visible;
+}
+
+#skills .bars .bar .progress {
+  width: 300px;
+}
+
+#project .container #menu {
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#project .container .items {
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+#project .container .item {
+  overflow: hidden;
+}
+
+#pricing .container .cards {
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+#mix .container .items {
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+#squad .container .items {
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 10rem;
+}
+
+#squad .container .items .item {
+  overflow: visible;
 }
 /*# sourceMappingURL=mobile.css.map */

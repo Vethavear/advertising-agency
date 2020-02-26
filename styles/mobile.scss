@@ -1,6 +1,132 @@
 //smartphones
-@media(max-width: 500px) {
-  * {
-    overflow-x: hidden;
+* {
+  overflow-x: hidden;
+}
+h1 {
+  font-size: 1.5rem;
+}
+.btext {
+  font-size: 1.7rem;
+}
+.ts1 {
+  font-size: 1rem;
+}
+.burgerClicked {
+  height: 50vh !important;
+  ul {
+    position: fixed;
+    width: 100%;
+    top: 10vh;
+    background: black;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 2rem 0;
+    li {
+      a {
+        color: white;
+      }
+    }
+  }
+}
+nav {
+  border: none;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-top: 0.5rem;
+  #burger {
+    display: flex;
+  }
+  ul {
+    display: none;
+  }
+}
+#showcase {
+  height: 100%;
+  #showcase-content {
+    padding-top: 30vh;
+    height: 100vh;
+    header {
+      p {
+        width: 100%;
+      }
+      padding: 0 1rem;
+    }
+  }
+}
+
+#service {
+  .container {
+    .cards {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+#ourmission {
+  .container {
+    flex-direction: column;
+  }
+}
+
+#skills {
+  .bars {
+    grid-template-columns: 1fr;
+    gap: 0;
+
+    .bar {
+      overflow: visible;
+      .progress {
+        width: 300px;
+      }
+    }
+  }
+}
+
+#project {
+  .container {
+    #menu {
+      align-self: center;
+      display: flex;
+    }
+
+    .items {
+      grid-template-columns: 1fr;
+    }
+    .item {
+      overflow: hidden;
+    }
+  }
+}
+
+#pricing {
+  .container {
+    .cards {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+#mix{
+  .container {
+    .items {
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
+  }
+}
+
+#squad{
+  .container{
+    .items{
+      grid-template-columns: 1fr;
+      gap: 10rem;
+      .item{
+        overflow: visible;
+      }
+    }
   }
 }

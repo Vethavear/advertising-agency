@@ -7,6 +7,8 @@ const elementsToFade = document.getElementsByClassName('fade');
 const portfolioImgs = document.querySelector("#project > div > div.items").children;
 const counters = document.getElementsByClassName('counter');
 const countIt = document.getElementById('countit');
+const questions = document.getElementsByClassName('questions').item(0);
+const burger = document.getElementById('burger');
 
 const translate = (pixels, doc) => {
   doc.style.transform = '';
@@ -89,7 +91,6 @@ const updateCounters = () => {
         element.innerHTML = '1';
         element.classList.add('counted');
         const interval = setInterval(() => {
-
           let current = parseInt(element.innerHTML);
           element.innerHTML = current + 1;
           if (current === end) {
@@ -102,7 +103,7 @@ const updateCounters = () => {
 }
 
 const navChange = () => {
-  if (window.scrollY > 400) {
+  if (window.scrollY > 200) {
     nav.style.background = ' linear-gradient(to right, rgba(233, 76, 233, 1), rgba(96, 19, 232, 1))';
     nav.style.height = '8vh';
   } else {
@@ -110,12 +111,51 @@ const navChange = () => {
     nav.style.height = '10vh';
   }
 }
+
+const toggleAnswer = (element) => {
+  // change to 200px;
+  console.log(element.style.height);
+  if (element.style.height === '75px') {
+    element.classList.add('rotateIcon');
+    element.style.height = '200px';
+  } else {
+    element.style.height = '75px';
+    element.classList.remove('rotateIcon');
+
+  }
+}
+
+const toggleBurger = () => {
+
+  if (nav.classList.contains('burgerClicked')) {
+    nav.classList.remove('burgerClicked');
+  } else {
+    nav.classList.add('burgerClicked');
+  }
+}
+
+const isMobileDevice = () => {
+  return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+}
+
+if (isMobileDevice()) {
+  for (let i = 0; i < bars.length; i++) {
+    const element = bars.item(i);
+    element.classList.add('fillBar');
+  }
+}
 //listeners
 menu.addEventListener('click', el => {
-  console.log(portfolioImgs);
   filter(el.target.id);
 });
 
+questions.addEventListener('click', el => {
+  if (el.target.closest('.question')) {
+    toggleAnswer(el.target.closest('.question'));
+  }
+});
+
+burger.addEventListener('click', toggleBurger);
 window.addEventListener('load', fadeIn);
 window.addEventListener('scroll', () => {
   fillBar();
