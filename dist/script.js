@@ -8,7 +8,6 @@ const portfolioImgs = document.querySelector("#project > div > div.items").child
 const counters = document.getElementsByClassName('counter');
 const countIt = document.getElementById('countit');
 
-
 const translate = (pixels, doc) => {
   doc.style.transform = '';
   doc.style.transform = `translateX(${pixels}px)`;
@@ -28,7 +27,6 @@ const slideRatingsItems = () => {
 }
 setInterval(slideRatingsItems, 3000);
 
-
 const isInViewport = el => {
   const rect = el.getBoundingClientRect();
   return (
@@ -41,7 +39,6 @@ const isInViewport = el => {
 };
 
 const fadeIn = () => {
-
   for (let i = 0; i < elementsToFade.length - 1; i++) {
     const element = elementsToFade.item(i);
     if (isInViewport(element)) {
@@ -64,7 +61,6 @@ const filter = (type) => {
       const element = portfolioImgs.item(i);
       element.classList.add('visible');
       element.classList.remove('opacity0');
-
     }
   }
   else {
@@ -84,28 +80,34 @@ const changeCounter = (element, newContent) => {
   element.innerHTML = newContent.toString();
 }
 const updateCounters = () => {
-
   if (isInViewport(countIt)) {
-
     for (let i = 0; i < counters.length; i++) {
       const element = counters.item(i);
       if (element.classList.contains('counted')) {
       } else {
-        let end = parseInt(element.innerHTML) -1;
+        let end = parseInt(element.innerHTML) - 1;
         element.innerHTML = '1';
         element.classList.add('counted');
         const interval = setInterval(() => {
 
           let current = parseInt(element.innerHTML);
-          element.innerHTML = current+1;
-          if(current===end){
+          element.innerHTML = current + 1;
+          if (current === end) {
             clearInterval(interval);
           }
-        
-        },10);
-        
+        }, 10);
       }
     }
+  }
+}
+
+const navChange = () => {
+  if (window.scrollY > 400) {
+    nav.style.background = ' linear-gradient(to right, rgba(233, 76, 233, 1), rgba(96, 19, 232, 1))';
+    nav.style.height = '8vh';
+  } else {
+    nav.style.background = 'none';
+    nav.style.height = '10vh';
   }
 }
 //listeners
@@ -115,17 +117,11 @@ menu.addEventListener('click', el => {
 });
 
 window.addEventListener('load', fadeIn);
-window.addEventListener('scroll', fillBar);
-window.addEventListener('scroll', fadeIn);
-window.addEventListener('scroll', updateCounters);
 window.addEventListener('scroll', () => {
-  if (window.scrollY > 400) {
-    nav.style.background = ' linear-gradient(to right, rgba(233, 76, 233, 1), rgba(96, 19, 232, 1))';
-    nav.style.height = '8vh';
-  } else {
-    nav.style.background = 'none';
-    nav.style.height = '10vh';
-  }
+  fillBar();
+  fadeIn();
+  updateCounters();
+  navChange();
 });
 
 

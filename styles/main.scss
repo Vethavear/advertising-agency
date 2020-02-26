@@ -546,7 +546,7 @@ transition: all 0.5s;
     }
     .items {
       row-gap: 10rem;
-      margin: 0 1rem;
+      margin: 4.5rem 1rem;
     }
     .item {
       position: relative;
@@ -650,6 +650,9 @@ transition: all 0.5s;
 
 #ratings {
   .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     .ratings-wrapper {
       width: 100%;
       overflow: hidden;
@@ -658,7 +661,6 @@ transition: all 0.5s;
         justify-content: center;
         align-items: center;
         transition: all 0.5s;
-
         .item {
           width: 300px;
           height: 400px;
@@ -673,7 +675,6 @@ transition: all 0.5s;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            transition: all 0.5s;
 
             h1 {
               margin: 2rem 0;
@@ -697,7 +698,6 @@ transition: all 0.5s;
               border-color: rgba(136, 183, 213, 0);
               border-top-color: #ffffff;
               border-width: 30px;
-              transition: all 0.5s;
               filter: drop-shadow(rgba(0, 0, 0, 0.23) 0px 5px 3px);
             }
             &:hover {

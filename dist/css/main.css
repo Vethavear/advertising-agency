@@ -831,7 +831,7 @@ nav ul li a {
 
 #squad .container .items {
   row-gap: 10rem;
-  margin: 0 1rem;
+  margin: 4.5rem 1rem;
 }
 
 #squad .container .item {
@@ -968,6 +968,19 @@ nav ul li a {
   color: #9657fd;
 }
 
+#ratings .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 #ratings .container .ratings-wrapper {
   width: 100%;
   overflow: hidden;
@@ -1019,8 +1032,6 @@ nav ul li a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
   position: relative;
   background: white;
 }
@@ -1047,8 +1058,6 @@ nav ul li a {
   border-color: rgba(136, 183, 213, 0);
   border-top-color: #ffffff;
   border-width: 30px;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
   -webkit-filter: drop-shadow(rgba(0, 0, 0, 0.23) 0px 5px 3px);
           filter: drop-shadow(rgba(0, 0, 0, 0.23) 0px 5px 3px);
 }
