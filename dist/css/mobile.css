@@ -75,7 +75,12 @@ nav ul {
 }
 
 #showcase #showcase-content header {
+  overflow: visible;
   padding: 0 1rem;
+}
+
+#showcase #showcase-content header h2 {
+  padding: 1rem 0;
 }
 
 #showcase #showcase-content header p {
@@ -136,13 +141,120 @@ nav ul {
   justify-items: center;
 }
 
+#squad {
+  padding: 2rem 0;
+}
+
 #squad .container .items {
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   gap: 10rem;
+  overflow: visible;
+  padding: 2rem 0;
 }
 
 #squad .container .items .item {
   overflow: visible;
+}
+
+#clients .container .carousel-wrapper .carousel .carousel_item {
+  margin: 0 15px;
+  background: white;
+  width: 275px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#blogcards .container .cards {
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+#faq .container .questions .question .title {
+  height: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+}
+
+#faq .container .questions .question .title h2 {
+  color: #6e6e6e;
+  font-size: 1.1rem;
+}
+
+#faq .container .questions .question p {
+  line-height: 1.1;
+  padding-left: 1.5rem;
+  margin-left: 1rem;
+  border-left: 1px dashed #9657fd;
+  font-size: 0.9rem;
+}
+
+#contact .container .contact {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#contact .container .contact .left {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contact .container .contact .left p {
+  text-align: center;
+}
+
+#contact .container .contact .left .row i {
+  margin-right: 0.25rem;
+}
+
+#contact .container .contact .right {
+  margin: 0;
+}
+
+footer .links .container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .links .container p {
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+footer .links .container ul {
+  margin: 1rem 0;
+}
+
+footer .links .container ul li {
+  margin: 0 0.5rem;
 }
 /*# sourceMappingURL=mobile.css.map */
