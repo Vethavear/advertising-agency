@@ -834,6 +834,7 @@ nav ul li a {
 }
 
 #squad .container {
+  padding-bottom: 8rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -854,7 +855,7 @@ nav ul li a {
 
 #squad .container .items {
   row-gap: 10rem;
-  margin: 4.5rem 1rem;
+  margin: 2rem 1rem;
 }
 
 #squad .container .item {
