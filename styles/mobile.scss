@@ -37,6 +37,7 @@ nav {
   justify-content: space-around;
   align-items: flex-start;
   padding-top: 0.5rem;
+  height:13vh;
   #burger {
     display: flex;
   }
@@ -50,7 +51,7 @@ nav {
   height: 100%;
   #showcase-content {
 
-    padding-top: 30vh;
+    padding-top: 20vh;
     height: 100vh;
     header {
     overflow: visible;

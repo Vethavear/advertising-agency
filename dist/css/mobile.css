@@ -53,6 +53,7 @@ nav {
       -ms-flex-align: start;
           align-items: flex-start;
   padding-top: 0.5rem;
+  height: 13vh;
 }
 
 nav #burger {
@@ -70,7 +71,7 @@ nav ul {
 }
 
 #showcase #showcase-content {
-  padding-top: 30vh;
+  padding-top: 20vh;
   height: 100vh;
 }
 
@@ -257,4 +258,3 @@ footer .links .container ul {
 footer .links .container ul li {
   margin: 0 0.5rem;
 }
-/*# sourceMappingURL=mobile.css.map */

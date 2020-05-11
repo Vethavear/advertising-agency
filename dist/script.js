@@ -101,14 +101,21 @@ const updateCounters = () => {
     }
   }
 }
-
 const navChange = () => {
-  if (window.scrollY > 200) {
-    nav.style.background = ' linear-gradient(to right, rgba(233, 76, 233, 1), rgba(96, 19, 232, 1))';
-    nav.style.height = '8vh';
+  if (!isMobileDevice()) {
+    if (window.scrollY > 200) {
+      nav.style.background = ' linear-gradient(to right, rgba(233, 76, 233, 1), rgba(96, 19, 232, 1))';
+      nav.style.height = '8vh';
+    } else {
+      nav.style.background = 'none';
+      nav.style.height = '10vh';
+    }
   } else {
-    nav.style.background = 'none';
-    nav.style.height = '10vh';
+    if (window.scrollY > 200) {
+      nav.style.background = ' linear-gradient(to right, rgba(233, 76, 233, 1), rgba(96, 19, 232, 1))';
+    } else {
+      nav.style.background = 'none';
+    }
   }
 }
 
