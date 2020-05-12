@@ -2,12 +2,6 @@ nav {
   padding: 1rem 0;
 }
 
-@media (orientation: portrait) {
-  nav {
-    height: 12vh;
-  }
-}
-
 #showcase {
   height: 100%;
 }
