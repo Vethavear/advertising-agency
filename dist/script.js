@@ -103,7 +103,7 @@ const updateCounters = () => {
 }
 const navChange = () => {
   if (!isMobileDevice()) {
-    if (window.scrollY > 200) {
+    if (window.scrollY > 50) {
       nav.style.background = ' linear-gradient(to right, rgba(233, 76, 233, 1), rgba(96, 19, 232, 1))';
       nav.style.height = '8vh';
     } else {
@@ -111,7 +111,7 @@ const navChange = () => {
       nav.style.height = '10vh';
     }
   } else {
-    if (window.scrollY > 200) {
+    if (window.scrollY > 50) {
       nav.style.background = ' linear-gradient(to right, rgba(233, 76, 233, 1), rgba(96, 19, 232, 1))';
     } else {
       nav.style.background = 'none';
