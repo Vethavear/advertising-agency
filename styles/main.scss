@@ -78,6 +78,10 @@ nav {
     list-style-type: none;
     li {
       a {
+        transition: all 0.5s;
+        &:hover{
+          color: #d1d1d1;
+        }
         color: white;
       }
     }
@@ -329,6 +333,7 @@ nav {
     #menu {
       align-self: flex-start;
       button {
+        cursor: pointer;
         border: none;
         background: none;
         padding: 0 1rem;
@@ -606,6 +611,10 @@ nav {
         i {
           color: #6e6e6e;
           font-size: 1.2rem;
+          cursor: pointer;
+          &:hover{
+            color: #9657fd;
+          }
         }
       }
 
@@ -965,6 +974,7 @@ background: linear-gradient(to right, rgba(233, 76, 233, 0.9), rgba(96, 19, 232,
     margin: 2rem 0;
     display: flex;
     i {
+      cursor: pointer;
       width: 50px;
       height: 50px;
       margin: 0 1rem;
