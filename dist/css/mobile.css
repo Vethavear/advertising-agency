@@ -183,6 +183,14 @@ nav ul {
           align-items: center;
 }
 
+#ratings .container .ratings-wrapper .ratings .item {
+  overflow: visible;
+}
+
+#ratings .container .ratings-wrapper .ratings .item .testimonial {
+  overflow: visible;
+}
+
 #blogcards .container .cards {
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;

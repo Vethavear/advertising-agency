@@ -168,6 +168,21 @@ nav {
     }
   }
 }
+#ratings{
+  .container{
+    .ratings-wrapper{
+      .ratings{
+        .item{
+          overflow: visible;
+          .testimonial{
+          
+            overflow: visible;
+          }
+        }
+      }
+    }
+  }
+}
 #blogcards {
   .container {
     .cards {
