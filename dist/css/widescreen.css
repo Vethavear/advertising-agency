@@ -2,6 +2,12 @@ nav {
   padding: 1rem 0;
 }
 
+@media (orientation: portrait) {
+  nav {
+    height: 12vh;
+  }
+}
+
 #showcase {
   height: 100%;
 }
@@ -17,7 +23,11 @@ nav {
 }
 
 #squad .container {
-  padding: 2rem 0;
+  padding: 5rem 0;
+}
+
+#squad .container .items .item .description {
+  overflow: visible;
 }
 
 #contact .container {
