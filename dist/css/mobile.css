@@ -151,20 +151,37 @@ nav ul {
   justify-items: center;
 }
 
-#squad {
-  padding: 2rem 0;
+@media (orientation: portrait) {
+  #squad {
+    padding: 2rem 0;
+  }
+  #squad .container .items {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 10rem;
+    overflow: visible;
+    padding: 2rem 0;
+  }
+  #squad .container .items .item {
+    overflow: visible;
+  }
 }
 
-#squad .container .items {
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  gap: 10rem;
-  overflow: visible;
-  padding: 2rem 0;
-}
-
-#squad .container .items .item {
-  overflow: visible;
+@media (orientation: landscape) {
+  #squad {
+    padding: 2rem 0;
+  }
+  #squad .container .items {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    row-gap: 10rem;
+    overflow: visible;
+    padding: 2rem 0;
+  }
+  #squad .container .items .item {
+    overflow: visible;
+  }
 }
 
 #clients .container .carousel-wrapper .carousel .carousel_item {

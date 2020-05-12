@@ -134,7 +134,7 @@ nav {
     }
   }
 }
-
+@media (orientation: portrait) {
 #squad {
   padding: 2rem 0;
   .container {
@@ -150,7 +150,25 @@ nav {
     }
   }
 }
-
+}
+@media (orientation: landscape) {
+  #squad {
+    padding: 2rem 0;
+    .container {
+      .items {
+        grid-template-columns: 1fr 1fr;
+        gap: 5rem;
+        row-gap: 10rem;
+        overflow: visible;
+  
+        padding: 2rem 0;
+        .item {
+          overflow: visible;
+        }
+      }
+    }
+  }
+}
 #clients {
   .container {
     .carousel-wrapper {
