@@ -44,6 +44,8 @@ Simple food searcher using https://world.openfoodfacts.org api. Project done to 
 
 ## Live 📍
 
+Please disable ADBLOCK!
+
 https://vethavear.github.io/advertising-agency/dist/
 
 ## License 🔱
