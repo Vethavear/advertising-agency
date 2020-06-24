@@ -8,7 +8,7 @@
 </p>
 
 ## Project Overview 🎉
-Simple food searcher using https://world.openfoodfacts.org api. Project done to practice Axios and MVC. Suitable for mobile devices, although only in landscape orientation.
+My attempt to recreate Arphon Dias page on my own.
 ## Tech/framework used 🔧
 
 | Tech                                                    
@@ -16,7 +16,7 @@ Simple food searcher using https://world.openfoodfacts.org api. Project done to 
 | HTML                           
 | SASS                           
 | JS                           
-| Axios                          
+                        
 
 ## Screenshots 📺
 
@@ -49,4 +49,4 @@ Please disable ADBLOCK!
 https://vethavear.github.io/advertising-agency/dist/
 
 ## License 🔱
-All rights reserved by me.
+All rights belongs to Arpon Dias
