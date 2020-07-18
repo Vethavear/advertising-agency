@@ -162,7 +162,11 @@ questions.addEventListener('click', el => {
   }
 });
 
-burger.addEventListener('click', toggleBurger);
+nav.addEventListener('click', e => {
+  if (e.target.closest('li') || e.target.id == 'burger'){
+    toggleBurger();
+  }
+});
 window.addEventListener('load', fadeIn);
 window.addEventListener('scroll', () => {
   fillBar();
